@@ -1,0 +1,133 @@
+*{
+  font-family:arial;
+  font-size: 20px;
+  list-style: none;
+}
+
+.navbar{
+  background-color: #041528;
+  margin: 0px -15px;
+  position: relative;
+}
+
+li{
+  width: auto;
+}
+
+.box{
+  margin: 16px 0px 16px 32px;
+  width: 160px;
+  height: 32px;
+  background-color: #364452;
+}
+
+.navbar-nav{
+  padding: 0;
+}
+
+.navblock{
+  height: 64px;
+  padding: 19px 19px 19px 32px;
+  background-color: #041528;
+}
+
+.navblock:hover{
+  transition: 0.5s ease-in;
+  background-color: #4090F7;
+}
+
+a{
+  color: #ffffff;
+}
+
+a:hover{
+  height: 64px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.row{
+  background-color: #f0f2f5;
+  padding:24px;
+}
+
+.card{
+  margin: 8px -7px;
+  height: 200px;
+  background-color: #ffffff;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  position: relative;
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.card div{
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back{
+  transform: rotateY(180deg);
+}
+
+img{
+  max-width: auto;
+  height: 200px;
+}
+
+  .navbar-toggle{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 24px;
+    top: 7px;
+  }
+
+  .navbar-toggle span{
+    background-color: #979797;
+    width: 16px;
+    height: 3.33px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+  }
+
+  .navbar-toggle span:nth-child(1){
+    transform-origin: left center;
+  }
+
+  .navbar-toggle span:nth-child(2){
+    margin: 3px 0px;
+    transform-origin: left center;
+  }
+
+  .navbar-toggle span:nth-child(3){
+    transform-origin: left center;
+  }
+
+  .navbar-toggle.open span:nth-child(1){
+    transform:translate(3px,-2px) rotate(45deg);
+  }
+
+  .navbar-toggle.open span:nth-child(2){
+    width: 0%;
+    opacity: 0;
+  }
+
+  .navbar-toggle.open span:nth-child(3){
+    transform:translate(3px,2px) rotate(-45deg);
+  }
+
+  @media screen and (min-width: 768px) {
+    .box{
+      float: left;
+      margin-right: 32px;
+    }
+    .navblock{
+      float: left;
+      padding: 19px;
+    }
+  }
